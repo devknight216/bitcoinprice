@@ -100,7 +100,7 @@ const ChartData = ({ cryptoName, isExpanded }) => {
           domainPadding={5}
           containerComponent={
             <VictoryVoronoiContainer
-              labels={({ datum }) => formatPrice(datum.y)} // Format the price
+              labels={({ datum }) => [formatPrice(datum.y), format(datum.x, "MM/dd/hhaa")]} // Format the price
               title={`${cryptoName} price data chart`} // For screen readers
               labelComponent={
                 <VictoryTooltip
