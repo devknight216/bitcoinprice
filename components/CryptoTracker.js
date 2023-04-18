@@ -47,7 +47,7 @@ const CryptoTracker = ({ cryptoName }) => {
     staleTime: 60000
   });
 
-  console.log("data", data)
+  // console.log("data", data)
   const onCardClick = () => {
     if (!isExpanded) {
       setIsExpanded(true);

@@ -62,7 +62,7 @@ const ChartData = ({ cryptoName, isExpanded }) => {
         y: item[1]
       }))
   });
-  console.log("data2", data)
+  // console.log("data2", data)
 
   return (
     <div className="chart">
